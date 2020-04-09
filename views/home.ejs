@@ -1,0 +1,40 @@
+<%- include("partials/header.ejs") %>  
+<form action="">
+<div>
+<label for="names-choice">Choose a flavor:</label>
+<input list="names" id="names-choice" name="names-choice" />
+                    
+<datalist id="names">
+   <% for(var i = 0; i < names.length; i++){ %>  
+        <option value=<%=names[i];%>></option>
+
+   <% } %>  
+   </datalist>
+</div>
+
+<div>
+   <label for="gender-choice">Choose a flavor:</label>
+<input list="genders" id="genders-choice" name="genders-choice" />
+                    
+<datalist id="genders">
+   <% for(var i = 0; i < genders.length; i++){ %>  
+        <option value=<%=genders[i];%>></option>
+
+   <% } %>  
+</datalist>
+</div>
+
+<div>
+   <label for="year-choice">Choose a flavor:</label>
+<input list="years" id="years-choice" name="years-choice" />
+                    
+<datalist id="years">
+   <% for(var i = 0; i < years.length; i++){ %>  
+        <option value=<%=years[i];%>></option>
+
+   <% } %>  
+                    
+</datalist>
+</div>
+</form>
+<%- include("partials/footer.ejs") %> 
